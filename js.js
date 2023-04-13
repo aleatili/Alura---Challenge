@@ -1,26 +1,18 @@
 const bt3 = document.getElementById("bt3");
 const divBtn = document.getElementById("divBtn");
 const textoEnc = document.getElementById("textoEnc");
-//const textIng = document.getElementById("textoIng");
+const textIng = document.getElementById("textoIng");
 
 const textInput = document.getElementById("textoIng");
 const msj = document.getElementById("imga")
-
-console.log(textInput);
-console.log(textoEnc.innerHTML);
-console.log(textoEnc.innerHTML.length);
-textoEnc.innerHTML = "";
-console.log(textoEnc.innerHTML.length);
-console.log(textInput.innerHTML.length);
-textInput.innerHTML = "";
-
-
-
+const long = textIng.value;
+console.log(textIng.value);
+console.log(long.length);
+//
 
 function encriptar() {
 
-
-    if (textInput.innerHTML.length == 0) {
+    if (textIng.value.length == 0) {
         msj.style.display = "block";
         
     } else {
